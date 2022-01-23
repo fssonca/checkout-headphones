@@ -1,13 +1,33 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Layout from "./components/layout";
+
+import SelectProduct from "./pages/selectProduct";
+import DeliveryDetails from "./pages/deliveryDetails";
+import PaymentInfo from "./pages/payment";
+
+import { OrderDetailsProvider, useOrderDetails } from "./context/index";
 
 function App() {
+  const { orderPhase } = useOrderDetails();
+
+  let Component = SelectProduct; // default to order page
+
+  switch (orderPhase) {
+    case "select-product":
+      Component = SelectProduct;
+      break;
+    case "delivery-details":
+      Component = DeliveryDetails;
+      break;
+    case "payment-info":
+      Component = PaymentInfo;
+      break;
+    default:
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <OrderDetailsProvider>
+      <Layout>{<Component />}</Layout>
+    </OrderDetailsProvider>
   );
 }
 

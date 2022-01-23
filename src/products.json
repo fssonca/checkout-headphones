@@ -1,0 +1,73 @@
+{
+  "beats-solo3": {
+    "black": {
+      "title": "Beats Solo3 Wireless On-Ear Headphones - Black",
+      "description": "<ul><li>High-performance wireless Bluetooth headphones in black</li><li>Features the Apple W1 chip and Class 1 wireless Bluetooth connectivity</li><li>With up to 40 hours of battery life, Beats Solo3 wireless is your perfect everyday headphone</li><li>Compatible with iOS and Android devices</li><li>With Fast Fuel, 5 minutes of charging gives you 3 hours of playback when battery is low</li><li>Adjustable fit with comfort-cushioned ear cups made for everyday use</li></ul>",
+      "price": 129.9,
+      "images": [
+        {
+          "full-size": "https://m.media-amazon.com/images/I/51QxA-98Q+L._AC_SX679_.jpg",
+          "thumb": "https://m.media-amazon.com/images/I/41sBRQTnnFL._AC_SR38,50_.jpg"
+        },
+        {
+          "full-size": "https://m.media-amazon.com/images/I/51Kg5XJiiHL._AC_SL1000_.jpg",
+          "thumb": "https://m.media-amazon.com/images/I/41NI7XCEklL._AC_SR38,50_.jpg"
+        },
+        {
+          "full-size": "https://m.media-amazon.com/images/I/61LLtLzxRpL._AC_SL1500_.jpg",
+          "thumb": "https://m.media-amazon.com/images/I/41Bw5JnGxWL._AC_SR38,50_.jpg"
+        },
+        {
+          "full-size": "https://m.media-amazon.com/images/I/61+Hh--cPcL._AC_SL1500_.jpg",
+          "thumb": "https://m.media-amazon.com/images/I/417QCnXfASL._AC_SR38,50_.jpg"
+        }
+      ]
+    },
+    "red": {
+      "title": "Beats Solo3 Wireless On-Ear Headphones - Red",
+      "description": "<ul><li>High-performance wireless Bluetooth headphones in red</li><li>Features the Apple W1 chip and Class 1 wireless Bluetooth connectivity</li><li>With up to 40 hours of battery life, Beats Solo3 wireless is your perfect everyday headphone</li><li>Compatible with iOS and Android devices</li><li>With Fast Fuel, 5 minutes of charging gives you 3 hours of playback when battery is low</li><li>Adjustable fit with comfort-cushioned ear cups made for everyday use</li></ul>",
+      "price": 129.9,
+      "images": [
+        {
+          "full-size": "https://m.media-amazon.com/images/I/61sKVnPqTeL._AC_SL1500_.jpg",
+          "thumb": "https://m.media-amazon.com/images/I/41PorQC3ylL._AC_SR38,50_AA50_.jpg"
+        },
+        {
+          "full-size": "https://m.media-amazon.com/images/I/61fyKTC0XJL._AC_SL1500_.jpg",
+          "thumb": "https://m.media-amazon.com/images/I/41ZsjobJHSL._AC_SR38,50_AA50_.jpg"
+        },
+        {
+          "full-size": "https://m.media-amazon.com/images/I/615SMC0tJQL._AC_SL1500_.jpg",
+          "thumb": "https://m.media-amazon.com/images/I/41BU+jc32SL._AC_SR38,50_AA50_.jpg"
+        },
+        {
+          "full-size": "https://m.media-amazon.com/images/I/614QWJCGspL._AC_SL1500_.jpg",
+          "thumb": "https://m.media-amazon.com/images/I/41O33WtVfqL._AC_SR38,50_AA50_.jpg"
+        }
+      ]
+    },
+    "rose-gold": {
+      "title": "Beats Solo3 Wireless On-Ear Headphones - Rose Gold",
+      "description": "<ul><li>High-performance wireless Bluetooth headphones in Rose gold</li><li>Features the Apple W1 chip and Class 1 wireless Bluetooth connectivity</li><li>With up to 40 hours of battery life, Beats Solo3 wireless is your perfect everyday headphone</li><li>Compatible with iOS and Android devices</li><li>With Fast Fuel, 5 minutes of charging gives you 3 hours of playback when battery is low</li><li>Adjustable fit with comfort-cushioned ear cups made for everyday use</li></ul>",
+      "price": 129.9,
+      "images": [
+        {
+          "full-size": "https://m.media-amazon.com/images/I/61iIVpEM8-L._AC_SL1500_.jpg",
+          "thumb": "https://m.media-amazon.com/images/I/412s0AdHCaL._AC_SR38,50_AA50_.jpg"
+        },
+        {
+          "full-size": "https://m.media-amazon.com/images/I/61spA2zfWTL._AC_SL1500_.jpg",
+          "thumb": "https://m.media-amazon.com/images/I/41ypD5QhQIL._AC_SR38,50_AA50_.jpg"
+        },
+        {
+          "full-size": "https://m.media-amazon.com/images/I/61r5YYIZj5L._AC_SL1500_.jpg",
+          "thumb": "https://m.media-amazon.com/images/I/41aUnTa6+OL._AC_SR38,50_AA50_.jpg"
+        },
+        {
+          "full-size": "https://m.media-amazon.com/images/I/71PUjU0PzpL._AC_SL1500_.jpg",
+          "thumb": "https://m.media-amazon.com/images/I/41xY9akAk-L._AC_SR38,50_AA50_.jpg"
+        }
+      ]
+    }
+  }
+}
