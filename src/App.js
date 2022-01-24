@@ -4,10 +4,10 @@ import SelectProduct from "./pages/selectProduct";
 import DeliveryDetails from "./pages/deliveryDetails";
 import PaymentInfo from "./pages/payment";
 
-import { OrderDetailsProvider, useOrderDetails } from "./context/index";
+import { OrderDetailsProvider, OrderDetails } from "./context/index";
 
 function App() {
-  const { orderPhase } = useOrderDetails();
+  const { orderPhase } = OrderDetails;
 
   let Component = SelectProduct; // default to order page
 

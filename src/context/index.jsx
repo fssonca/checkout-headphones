@@ -1,29 +1,25 @@
-import { createContext, useContext, useState, useMemo } from "react";
+import { createContext, useReducer } from "react";
 
 const INITIAL_STATE = {
   orderPhase: "select-product",
-  product: "black",
+  productVariant: "black",
 };
 
-const OrderDetails = createContext(INITIAL_STATE);
+export const OrderDetails = createContext(INITIAL_STATE);
 
-// create custom hook to check whether we're inside a provider
-export function useOrderDetails() {
-  try {
-    const context = useContext(OrderDetails);
-
-    return context;
-  } catch (e) {
-    console.error(e);
+const mainReducer = (state, action) => {
+  switch (action.type) {
+    case "CHANGE_OPTION":
+      return { ...state, productVariant: action.payload };
+    case "CHANGE_ORDER_PHASE":
+      return { ...state, orderPhase: action.payload };
+    default:
+      return state;
   }
-}
+};
 
 export function OrderDetailsProvider(props) {
-  const [product, setProduct] = useState("black");
-  const [deliveryDetails, setDeliveryDetails] = useState({});
-  const [paymentInfo, setPaymentInfo] = useState({});
+  const [state, dispatch] = useReducer(mainReducer, INITIAL_STATE);
 
-  //   const value = useMemo(() => {}, []);
-
-  return <OrderDetails.Provider value={useOrderDetails()} {...props} />;
+  return <OrderDetails.Provider value={{ state, dispatch }} {...props} />;
 }

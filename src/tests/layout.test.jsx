@@ -78,4 +78,42 @@ describe("layout components", () => {
     const productDetails = screen.getByTestId("product-details");
     expect(productDetails.textContent).not.toBe("");
   });
+
+  test("clicking on a new option, the page shows the selected product version", async () => {
+    render(<App />);
+
+    const optionsListRow = screen.getByTestId("product-other-options");
+
+    // the product doesn't contain variants
+    if (!optionsListRow.childNodes.length) {
+      return;
+    }
+
+    const options = within(optionsListRow).getAllByTestId("product-option");
+
+    for (let i = 0; i < options.length; i++) {
+      // does the option thumb contain an image?
+      const elem = within(options[i]).getByRole("img");
+
+      expect(elem).toBeDefined();
+    }
+
+    // initial product name
+    let titleProductDisplayed = screen.getByTestId("product-name").textContent;
+    let newTitle;
+
+    // reverse options list so we can test from last to first
+    for (let i = options.length; i > 0; i--) {
+      userEvent.click(options[i - 1]);
+
+      newTitle = await screen.findByTestId("product-name");
+
+      // if the options block was clicked but the title did not change, we have an error
+      if (titleProductDisplayed === newTitle.textContent) {
+        throw new Error("Product was not changed");
+      }
+
+      titleProductDisplayed = newTitle.textContent;
+    }
+  });
 });
